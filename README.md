@@ -1,39 +1,77 @@
-Overview
-Adventure Works, a renowned bike manufacturer and seller, provided their sales and returns data for analysis. This end-to-end project involved data importing, cleaning, modeling, and visualization using Microsoft Power BI Desktop.
+🚴 Adventure Works Sales & Returns Analysis – Power BI Project
+📊 Overview
+Adventure Works, a renowned bike manufacturer and retailer, provided their Sales and Returns data for analysis. This end-to-end data project involved importing, cleaning, modeling, and visualizing data using Microsoft Power BI Desktop.
 
-Data Cleaning
-The raw dataset, provided in .csv format, was imported directly into Power BI. A total of 8 files were imported, each representing a distinct table. The primary focus was on Sales and Returns data. The cleaning process included:
+🧹 Data Cleaning
+The raw dataset consisted of 8 CSV files, each representing a distinct table. The cleaning process was conducted within Power BI and focused on:
 
-Ensuring columns were appropriately titled.
-Correcting data types.
-Checking for missing data (none was found).
-Identifying potential relationships between tables.
+Renaming columns for clarity.
 
-Data Modeling
-After verifying data accuracy and consistency, a data model was created:
-Established primary tables: 'Sales Data' and 'Returns Data'.
-Defined relationships, primarily one-to-many.
-The completed model is illustrated below for better understanding.
+Correcting and standardizing data types.
 
-DAX Functions
-With table relationships in place, DAX functions were utilized to analyze the dataset. Key DAX functions used include:
+Verifying the absence of missing data.
 
-ITERATOR FUNCTIONS (SUMX): Evaluates an expression for each row and aggregates results.
-CALCULATE(): Overrides filters to create new filter contexts, useful for metrics like Previous Month's Orders, Revenue, Profit, Returns, and Overall Average Price.
-RELATED(): Pulls data from different tables with established relationships.
-Date Functions (DateAdd, DATESINPERIOD): Essential for calculating metrics like 90-Day Rolling Profit and monthly comparisons.
-Measures created for this project were organized into a dedicated Measure Table.
+Identifying and preparing relationships across tables.
 
-Data Visualization
-The report includes four visualization pages:
+The primary focus was on the Sales and Returns tables.
 
-•	Executive Dashboard: Key performance indicators and summary metrics.
-•	Map: Geographical representation of sales data.
-•	Product: Detailed analysis of product performance.
-•	Customer Detail: Insights into customer behavior and demographics.
-Each visualization page offers a unique perspective, enabling comprehensive data analysis and informed decision-making.
+🧱 Data Modeling
+After data cleaning and validation:
 
-Conclusion
-This project demonstrates a thorough process of data cleaning, modeling, and visualization using Power BI, providing valuable insights into Adventure Works' sales and returns. The use of DAX functions and clear visualizations ensures a robust analysis, aiding in strategic planning and operational efficiency.
+Established primary tables: Sales Data and Returns Data.
 
-For more details, check out the full Power BI report.
+Created one-to-many relationships between tables.
+
+Designed a logical data model to support analytical goals.
+
+📌 A visual representation of the data model was created within Power BI for reference.
+
+🧠 DAX Functions & Measures
+To extract actionable insights, DAX (Data Analysis Expressions) functions were used extensively. Key functions include:
+
+SUMX: Iterates over a table to calculate and sum row-wise values.
+
+CALCULATE(): Creates custom filter contexts for dynamic metrics (e.g., previous month's sales, profit, return rate).
+
+RELATED(): Pulls related values from other tables.
+
+Date Functions:
+
+DATEADD, DATESINPERIOD for calculating:
+
+90-Day Rolling Profit
+
+Month-over-Month comparisons
+
+➡️ All custom measures were centralized in a dedicated Measure Table for easy access and maintenance.
+
+📈 Data Visualization
+The Power BI report was organized into four visualization pages, each offering unique business insights:
+
+ 
+Dashboard
+High-level KPIs (Sales, Profit, Returns, Avg. Price)
+
+Map
+
+Geographic breakdown of sales and returns.
+
+Product Performance
+
+Insights by product category, model, and returns.
+
+Customer Detail
+
+Behavior, demographics, and return trends by customer.
+
+These dashboards provide stakeholders with a 360° view of business performance and support data-driven decision-making.
+
+🧰 Tools Used
+Microsoft Power BI Desktop
+
+DAX (Data Analysis Expressions)
+
+Power Query (M Language)
+
+📎 Summary
+This project demonstrates an end-to-end approach to business data analysis using Power BI. From data ingestion to interactive dashboards, the focus was on uncovering insights and delivering a clear, actionable story through data.
